@@ -1,0 +1,152 @@
+@import "tailwindcss";
+
+@theme {
+  --color-rwanda-blue: #00A1DE;
+  --color-rwanda-yellow: #FAD201;
+  --color-rwanda-green: #20603D;
+}
+
+/* Typography & Base */
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: #f8fafc;
+  line-height: 1.6;
+  color: #1e293b;
+}
+
+/* Container */
+.max-w-7xl {
+  max-width: 80rem;
+}
+
+/* Enhanced Cards */
+.card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  transform: translateY(-2px);
+}
+
+/* Buttons */
+.btn-primary {
+  background: linear-gradient(135deg, #00A1DE, #0099cc);
+  box-shadow: 0 4px 14px 0 rgba(0, 161, 222, 0.4);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #0099cc, #00A1DE);
+  transform: translateY(-1px);
+  box-shadow: 0 7px 20px 0 rgba(0, 161, 222, 0.5);
+}
+
+.btn-secondary {
+  border: 2px solid #e2e8f0;
+  transition: all 0.2s ease;
+}
+
+.btn-secondary:hover {
+  border-color: #00A1DE;
+  background: rgba(0, 161, 222, 0.05);
+}
+
+/* Navbar Links */
+.navbar-link {
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.navbar-link:hover {
+  color: #FAD201 !important;
+}
+
+.navbar-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #FAD201, #FAD201);
+  transition: width 0.3s ease;
+}
+
+.navbar-link:hover::after {
+  width: 100%;
+}
+
+/* Product Card */
+.product-card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid #f1f5f9;
+}
+
+.product-card:hover {
+  border-color: #e2e8f0;
+  transform: translateY(-4px);
+}
+
+/* Forms */
+.input-field, .select-field, input, select, textarea {
+  @apply border-gray-200 rounded-lg px-4 py-3 focus:ring-2 focus:ring-rwanda-blue/20 focus:border-rwanda-blue transition-all duration-200 hover:border-gray-300;
+  background: #ffffff;
+}
+
+/* Hero */
+.rwanda-gradient {
+  background: linear-gradient(135deg, #00A1DE 0%, #FAD201 50%, #20603D 100%);
+}
+
+/* Toast */
+.toast {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00A1DE;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0099cc;
+}
+
+/* Focus */
+*:focus-visible {
+  outline: 2px solid #00A1DE;
+  outline-offset: 2px;
+}
+
+/* Smooth everything */
+* {
+  transition: all 0.15s ease;
+}
+
+/* Badge */
+.badge {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Star ratings */
+.star {
+  transition: all 0.2s ease;
+}
+
