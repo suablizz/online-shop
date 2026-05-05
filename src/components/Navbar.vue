@@ -1,8 +1,9 @@
 <script setup>
 import { ref } from 'vue'
+import { useCartStore } from '@/stores/cart'
 
 const mobileMenuOpen = ref(false)
-const cartStore = { itemCount: 0 }
+const cartStore = useCartStore()
 </script>
 
 <template>

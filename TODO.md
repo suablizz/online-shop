@@ -1,17 +1,10 @@
-# Kigali Tech Store Completion TODO
+# Cart Badge Fix Task
 
-## ✅ Completed
-- [x] Core structure (Vue 3, Pinia, Router, Tailwind)
-- [x] All stores (products, cart, wishlist, auth)
-- [x] All views (Home, Products, Cart, Checkout, Profile, etc.)
-- [x] Routing with guards
-- [x] FakeStore API integration
-- [x] Stripe Elements mock in CheckoutView.vue
-- [x] Cleanup legacy components (HelloWorld, icons) ✅ DELETED
-- [x] Comprehensive README.md
-- [x] Test app: `npm run dev` ✅ RUNNING
+**Status: In Progress**
 
-## 🎉 Done! Production Ready 🚀
-
-App fully functional with cart quantity changes, checkout (Stripe ready), auth, etc. All TODOs resolved, no errors. Deploy ready.
+## Steps:
+- [x] Analyzed files and confirmed root cause (Navbar mock cartStore)
+- [x] Edit src/components/Navbar.vue to use real useCartStore()
+- [x] Verified navbar badge updates when adding items (via dev server)
+- [x] Task complete
 
